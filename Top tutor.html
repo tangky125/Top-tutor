@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.6s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.background-image
+{
+    background-image: url(./Wall\ paper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.glass{
+width: 45%;
+float: left;
+margin-left: 30px;
+margin-right: 40px;
+padding: 30px;
+margin-top: 50px;
+padding-bottom: 50px;
+}
+
+</style>
+</head>
+<body>
+  
+<div id="navbar">
+  <a href="#home" id="logo">Top Tutor</a>
+  <div id="navbar-right">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#tutoring">Tutoring</a>
+    <a href="#contact">Contact</a>
+    <a href="http://localhost/project/Top%20tutor%20comment.php">Comment</a>
+  </div>
+</div>
+<div class="banner-area" id="home">
+<div class="background-image">
+  
+</div>
+
+<div class="about-area" id="about">
+  <div class="text-part">
+<div class="container">
+<div style="margin-top:70px;padding:15px 15px 10px;font-size:30px; text-align: center;">
+  <h1>About Us</h1>
+    </div>
+    <div style="margin-top:0px;padding:15px 15px 10px;font-size:30px; text-align: center;">
+      <p1>Want to break through your limit and master every aspects of your skills? Top Tutor is your choice. We are dedicated to promoting equity, opportunity, and achievement for all learners. Top Tutor will provide you best tutors with more than 10 years of experience. We have been in business for two years and have been approved by the ministry of education and training in Vietnam. </p1> 
+    </div>
+    <div style="margin-top:0px;padding:15px 15px 10px;font-size:30px; text-align: center;">
+    
+      <p2>Our goal is to foster achievement in communities and schools by advancing equity and instilling optimism. We achieve this by offering excellent academic and professional support that is encouraging, empowering, and geared toward learners of all ages and stages, from kindergarten through primary school, junior high school and high school </p2>
+    </div>
+    <div style="margin-top:0px;padding:15px 15px 40px;font-size:30px; text-align: center;">
+      <p3>The pass and persistence rates of students have increased thanks to our assistance, and students' confidence in their academic performance has increased. Our learner satisfaction statistics continue to be very high: 100% of respondents to our post-session survey said they were happy that their institution offered Top Tutor, and 95% said they would suggest it to a friend. Mutual feeling exists. It is a privilege for us to work alongside institutions to scale the human connection and deliver specialized support whenever and wherever needed.</p3>
+    </div>
+  </div>
+</div>
+</div>
+<div class="tutoring-area" id="tutoring">
+  <div class="text-part">
+    <div class="container">
+  <div style="margin-top:60px;padding:15px 15px 1px;font-size:30px; text-align: center;">
+    <h1>About Our Tutoring</h1>
+      </div>
+    <div style="text-align:center;margin-top:50px;">
+      <img src="Tutoring.png" alt="tutoring" style="width:100%;">
+    </div>
+  </div>
+</div>
+</div>
+<div class="contact-area" id="contact">
+  <div class="container">
+  <h3 style="font-size: 60px; text-align: center; margin-top: 73px;">Contact Form</h3>
+<form action="https://formsubmit.co/nguyentangky7@gmail.com" method="POST">
+<div class="container">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your full name.." required>
+    
+  <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Email" required>
+
+     <label for="grade">Glass levels</label>
+    <select id="grade" name="grade">
+      <option>Kindergarten</option>
+      <option>Primary school</option>
+      <option>Junior high school</option>
+      <option>High school</option>
+    </select>
+
+    <label for="country">Ho Chi Minh city district</label>
+    <select id="country" name="country">
+      <option>District 1</option>
+      <option>District 2</option>
+      <option>District 5</option>
+      <option>District 8</option>
+      <option>District 9</option>
+      <option>District Thu Duc</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+</div>
+<div class="container">
+  <div class="glass">
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477.27617973772135!2d106.76238304275306!3d10.843940484614622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527a4433ec655%3A0x32f7341cfbd52330!2zMTAwRSDEkOG6t25nIFbEg24gQmksIELDrG5oIFRo4buNLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MDAwMDAsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1666600098104!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+</div>
+<div class="glass">
+<p2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.5664994230243!2d106.7541705602956!3d10.867361800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527f2c4fbb233%3A0x216429f5eb7292c6!2sHim%20Lam%20Apartment!5e0!3m2!1sen!2s!4v1666600155418!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p2>
+</div>
+</div>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+</body>
+</html>
+
